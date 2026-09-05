@@ -4,6 +4,6 @@
   "description": "Docker, CI/CD, environment configuration, monitoring, deployment strategies, and secrets management.",
   "version": "0.1.0",
   "domains": ["devops"],
-  "activationHints": ["docker", "deploy", "ci", "cd", "pipeline", "kubernetes", "k8s", "nginx", "env", "secret", "monitor", "devops", "infrastructure", "container"],
+  "activationHints": ["docker", "deploy", "ci", "cd", "pipeline", "kubernetes", "k8s", "nginx", "env", "devops", "infrastructure", "containerize"],
   "skills": ["docker-patterns", "ci-cd", "environment-config", "logging-monitoring", "deployment-strategies", "secrets-management"]
 }

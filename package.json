@@ -11,7 +11,8 @@
     "test": "bun test",
     "build": "bun build src/cli/index.ts --outdir dist --target bun",
     "mcp": "bun run src/mcp/index.ts",
-    "benchmark:large": "bun run benchmark/large/run-large-benchmark.ts"
+    "benchmark:large": "bun run benchmark/large/run-large-benchmark.ts",
+    "lint:signals": "bun run scripts/lint-signals.ts"
   },
   "devDependencies": {
     "bun-types": "latest"

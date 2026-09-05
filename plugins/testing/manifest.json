@@ -4,6 +4,6 @@
   "description": "Unit testing, integration testing, E2E, TDD, mocking, and performance testing patterns.",
   "version": "0.1.0",
   "domains": ["testing"],
-  "activationHints": ["test", "spec", "jest", "vitest", "playwright", "cypress", "tdd", "bdd", "mock", "coverage", "testing", "e2e"],
+  "activationHints": ["jest", "vitest", "playwright", "cypress", "tdd", "bdd", "coverage", "testing", "e2e", "unit test", "test suite"],
   "skills": ["unit-testing", "integration-testing", "e2e-testing", "tdd-patterns", "mocking-patterns", "performance-testing"]
 }

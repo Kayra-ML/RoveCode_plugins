@@ -8,7 +8,7 @@
     "automate", "automation", "workflow", "script", "scheduled", "cron",
     "scrape", "scraping", "crawl", "browser", "Playwright", "Puppeteer",
     "Selenium", "data pipeline", "ETL", "transform", "batch", "retry",
-    "webhook", "trigger", "event", "background job", "queue", "worker"
+    "webhook", "trigger", "background job", "queue", "worker"
   ],
   "skills": [
     "workflow-design",

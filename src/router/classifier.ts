@@ -140,11 +140,12 @@ const DOMAIN_SIGNALS: Record<string, string[]> = {
     "sprite", "tilemap", "tileset",
     "game shader", "vertex shader",
     "collision detection", "hitbox", "rigidbody",
-    "game state", "game scene",
+    "game state", "game scene", "state machine",
     "delta time", "fixed timestep",
     "game object", "prefab",
     "2d platformer", "3d game",
     "physics engine",
+    "atlas", "addressable", "collider", "raycast",
   ],
 };
 

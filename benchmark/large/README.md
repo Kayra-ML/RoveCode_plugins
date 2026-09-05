@@ -91,14 +91,14 @@ bugs in `src/router/`:
 
 ### Result after the fixes
 
-| Metric | Before | After |
-|---|---|---|
-| Overall | 85.1 | **85.8** |
-| Routing Accuracy | 69.5 | **76.4** |
-| Domain Isolation | 73.2 | **95.7** |
-| Token Efficiency | 97.3 | 69.9 |
-| `benchmark/run-benchmark.ts` (20 scenarios) | 96/100 (A+) | **98/100 (A+)** |
-| `benchmark/isolation-benchmark.ts` (15 scenarios) | 88/100 | **100/100** |
+| Metric | Before | After (router fixes) | After (+ signal cleanup) |
+|---|---|---|---|
+| Overall | 85.1 | 85.8 | **85.7** |
+| Routing Accuracy | 69.5 | 76.4 | **76.2** |
+| Domain Isolation | 73.2 | 95.7 | **96.1** |
+| Token Efficiency | 97.3 | 69.9 | 69.1 |
+| `benchmark/run-benchmark.ts` (20 scenarios) | 96/100 (A+) | 98/100 (A+) | **98/100 (A+)**, Plugin Isolation 94→**96** |
+| `benchmark/isolation-benchmark.ts` (15 scenarios) | 88/100 | 100/100 | **100/100** |
 
 Domain isolation and routing accuracy improved substantially — unrelated
 plugins essentially stopped leaking into requests outside their domain.
@@ -107,18 +107,48 @@ bug: `web-design` and other plugins were being included (and loading skill
 bodies) far more often than they should have been, which inflated the old
 "efficiency" number with content nobody asked for.
 
-### What's still weak
+### Follow-up: a signal-collision linter, and what it changed
 
-`rust` (74.5/100) and `game-development` (77.5/100) remain the lowest-scoring
-plugins. Digging into the remaining misses shows this isn't leakage anymore
-(`selectedPlugins` is correctly empty, not polluted) — it's a genuine recall
-gap: `DOMAIN_SIGNALS` for these two domains leans on multi-word phrases
-("async rust", "game loop", "fixed timestep") that don't cover how people
-actually phrase things ("I need help with **async**", "handle **tick** when
-it interacts with **fixed update**"). Closing this safely would mean adding
-single-word jargon to `DOMAIN_SIGNALS.rust`/`.game-development`, but most of
-the remaining candidate words (`error`, `performance`, `generic`, `iterator`,
-`heap`, `move`) are generic CS terms shared with other languages/domains —
-adding them risks reintroducing exactly the kind of cross-domain leakage this
-benchmark exists to catch. Left as a known, honestly-reported limitation
-rather than force-fit to this benchmark's own synthetic phrasing.
+`scripts/lint-signals.ts` (`bun run lint:signals`) scans every plugin
+manifest and skill-meta file for the exact classes of signal that caused the
+bugs above, so future plugin/skill additions get checked automatically
+instead of relying on someone noticing a benchmark failure by chance. It
+flags (ERROR, fails the run) a generic English word used as a *plugin-level*
+`activationHint` — the one remaining class that can still misroute a whole
+plugin — and (WARN) short hints, skill signals shared across plugins, and
+generic-word skill-level signals, which are lower-severity now that the
+router fixes above contain their blast radius.
+
+Its first run found 12 real ERRORs: `activationHint`s like `"test"`,
+`"mock"`, `"secret"`, `"monitor"`, `"container"`, `"index"`, `"server"`,
+`"node"`, `"event"`, `"prompt"`, `"model"` — ordinary English words being used
+as one-word triggers for an entire plugin. All 12 were removed or replaced
+with a more specific alternative (e.g. `devops`'s `"container"` →
+`"containerize"`, `database`'s `"index"` → `"db index"`, `testing`'s
+`"test"`/`"mock"` → `"unit test"`/`"test suite"`) across
+`plugins/{ai-engineering,automation,backend,database,devops,testing}/manifest.json`.
+Every plugin retained 9+ other hints, so none lost meaningful coverage.
+
+### What's still weak (and what's genuinely fixable)
+
+`game-development` improved from 77.5→**83.5/100** after adding 5 signals to
+`DOMAIN_SIGNALS.game-development` that were verified, one at a time, to be
+both (a) needed to fix a specific observed miss and (b) checked against
+every other domain's signal list for collisions before adding: `"atlas"`,
+`"addressable"`, `"collider"`, `"raycast"`, and the bigram `"state machine"`.
+
+`rust` (74.5/100) was **deliberately left unchanged** after the same
+exercise found no safe fix. Every remaining `rust` miss falls into one of two
+buckets: (1) the test sentence contains only one rust-relevant word at all
+(e.g. "I need help with **async** for my project"), which the classifier's
+own `threshold = max(2, maxScore * 0.6)` rule can never pass from a single
+1-point unigram hit regardless of what's in the signal list — fixing this
+would mean lowering that global "2" floor, a much bigger, riskier, all-domains
+change, not a per-domain signal tweak; or (2) the two candidate words are
+each individually too generic/cross-language to add safely (`"argument"`,
+`"expect"` — the latter already shared with `testing`'s core assertion
+function; `"heap"`/`"allocation"` — systems-programming vocabulary common to
+C++/Java/Go, not Rust-specific; `"generic"`/`"iterator"` — used by nearly
+every typed language). Forcing any of these in would very likely reproduce
+the exact class of leakage this benchmark was built to catch. Reported here
+rather than papered over with an unsafe addition.

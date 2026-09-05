@@ -4,6 +4,6 @@
   "description": "Database schema design, query optimization, indexing, migrations, and ORM patterns.",
   "version": "0.1.0",
   "domains": ["database"],
-  "activationHints": ["database", "postgres", "postgresql", "mysql", "sqlite", "query", "schema", "migration", "index", "orm", "drizzle", "prisma", "sql"],
+  "activationHints": ["database", "postgres", "postgresql", "mysql", "sqlite", "query", "schema", "migration", "db index", "orm", "drizzle", "prisma", "sql"],
   "skills": ["schema-design", "query-optimization", "migrations", "indexing-strategy", "transactions", "orm-patterns"]
 }

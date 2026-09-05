@@ -38,6 +38,8 @@ Also see [`benchmark/large/`](benchmark/large/) for a 445-scenario stress test b
 
 ### Competitor Comparison
 
+> **Methodology note:** only the **Routing** and **Token** columns for RoveCode Plugins come from an actual benchmark run (`benchmark/run-benchmark.ts`, reproducible above). Its own **Memory/Skill/Learning** columns, and every column for every other system in this table, are the authors' estimates based on public docs and general reputation — none of these competitors were installed and run through the same test. Treat this table as a positioning illustration, not a measured comparison, until independently verified.
+
 | System | Routing | Memory | Skill | Learning | Token | Overall |
 |--------|---------|--------|-------|----------|-------|---------|
 | **RoveCode Plugins** | **99** | 72 | 78 | **65** | **99** | **83** |
@@ -48,7 +50,7 @@ Also see [`benchmark/large/`](benchmark/large/) for a 445-scenario stress test b
 | LangChain Hub | 10 | 0 | 60 | 0 | 20 | 18 |
 | Pieces LTM | 50 | **90** | 0 | 0 | 45 | 37 |
 
-> RoveCode Plugins is the only system that combines routing + memory + skill injection + learning simultaneously.
+> RoveCode Plugins is, to the authors' knowledge, the only system in this comparison that combines routing + memory + skill injection + learning simultaneously — the "Learning" column itself is also not yet independently benchmarked for RoveCode; see [`benchmark/large/README.md`](benchmark/large/README.md) for what has and hasn't been verified so far.
 
 ---
 
