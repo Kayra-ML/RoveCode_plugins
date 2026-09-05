@@ -27,18 +27,20 @@ Most AI tools inject everything into context hoping something sticks. RoveCode P
 Tested against 20 real-world scenarios across 9 domains.
 
 ```
-Overall Score:    96/100  (A+)
-Routing Accuracy: 98/100  — 100% plugin match, 100% skill hit rate
-Token Efficiency: 98/100  — avg 2,698 tokens (vs mem0's 6,900 baseline)
+Overall Score:    98/100  (A+)
+Routing Accuracy: 99/100  — 100% plugin match, 100% skill hit rate
+Token Efficiency: 99/100  — avg 2,621 tokens (vs mem0's 6,900 baseline)
 Routing Speed:    100/100 — avg 1ms, deterministic
-Plugin Isolation: 88/100  — Rust requests never load web-design knowledge
+Plugin Isolation: 94/100  — Rust requests never load web-design knowledge
 ```
+
+Also see [`benchmark/large/`](benchmark/large/) for a 445-scenario stress test built directly from every skill's real activation data — it's what caught and verified the classifier/router fixes behind these numbers.
 
 ### Competitor Comparison
 
 | System | Routing | Memory | Skill | Learning | Token | Overall |
 |--------|---------|--------|-------|----------|-------|---------|
-| **RoveCode Plugins** | **98** | 72 | 78 | **65** | **98** | **82** |
+| **RoveCode Plugins** | **99** | 72 | 78 | **65** | **99** | **83** |
 | mem0 | 85 | **95** | 0 | 0 | 95 | 55 |
 | Cursor Rules | 45 | 0 | 55 | 0 | 30 | 26 |
 | OpenCode Skills | 60 | 0 | 70 | 0 | 75 | 41 |

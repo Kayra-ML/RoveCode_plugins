@@ -148,12 +148,20 @@ const DOMAIN_SIGNALS: Record<string, string[]> = {
   ],
 };
 
-export function classifyRequest(request: string): ClassificationResult {
+export interface WordsAndNgrams {
+  wordSet: Set<string>;
+  ngrams: Set<string>;
+}
+
+// Tokenizes a request into a set of individual words and a set of
+// bigrams/trigrams, so callers can check for exact whole-word or
+// whole-phrase signal matches (never a raw substring match, which is
+// what lets short signals like "ci" false-positive inside "circuit").
+export function buildWordsAndNgrams(request: string): WordsAndNgrams {
   const lower = request.toLowerCase();
   const words = lower.split(/[\s,.\-_/(){}[\]'"!?]+/).filter((w) => w.length > 1);
   const wordSet = new Set(words);
 
-  // Build bigrams and trigrams for multi-word signal matching
   const ngrams = new Set<string>();
   for (let i = 0; i < words.length - 1; i++) {
     ngrams.add(`${words[i]} ${words[i + 1]}`);
@@ -161,6 +169,12 @@ export function classifyRequest(request: string): ClassificationResult {
   for (let i = 0; i < words.length - 2; i++) {
     ngrams.add(`${words[i]} ${words[i + 1]} ${words[i + 2]}`);
   }
+
+  return { wordSet, ngrams };
+}
+
+export function classifyRequest(request: string): ClassificationResult {
+  const { wordSet, ngrams } = buildWordsAndNgrams(request);
 
   const scores: Record<string, number> = {};
   const matchedKeywords: string[] = [];
