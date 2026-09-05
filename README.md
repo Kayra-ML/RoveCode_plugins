@@ -31,10 +31,13 @@ Overall Score:    98/100  (A+)
 Routing Accuracy: 99/100  — 100% plugin match, 100% skill hit rate
 Token Efficiency: 99/100  — avg 2,621 tokens (vs mem0's 6,900 baseline)
 Routing Speed:    100/100 — avg 1ms, deterministic
-Plugin Isolation: 94/100  — Rust requests never load web-design knowledge
+Plugin Isolation: 96/100  — Rust requests never load web-design knowledge
 ```
 
-Also see [`benchmark/large/`](benchmark/large/) for a 445-scenario stress test built directly from every skill's real activation data — it's what caught and verified the classifier/router fixes behind these numbers.
+Two larger, harder benchmarks back these numbers and go well beyond routing:
+
+- [`benchmark/large/`](benchmark/large/) — 445 scenarios built directly from every skill's real activation data, plus a signal-collision linter (`bun run lint:signals`) that catches the class of routing bug this suite found before it ships again.
+- [`benchmark/learning/`](benchmark/learning/) — 57 scenarios covering the personal-learning system (signal detection + retrieval domain isolation), an area the original 20-scenario suite above never touched at all.
 
 ### Competitor Comparison
 

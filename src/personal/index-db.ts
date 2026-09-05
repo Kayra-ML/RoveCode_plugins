@@ -442,6 +442,17 @@ export class PersonalIndexDb {
     return scored
       // Require at least one positive signal: keyword/synonym hit, domain match, or type affinity
       .filter((s) => {
+        // Hard domain isolation: an entry with an explicit domain that
+        // conflicts with the query's domain is never relevant, no matter how
+        // much keyword or semantic overlap it happens to have — e.g. a rust
+        // entry about "async streaming" model inference must never surface
+        // for an ai-engineering query about "async streaming" LLM calls just
+        // because both mention the same words. The -3 domainScore penalty
+        // above is a soft ranking signal among already-eligible rows; it is
+        // not strong enough on its own to reliably outweigh a high keyword +
+        // semantic score, so the exclusion needs to be unconditional here.
+        if (domain && s.row.domain && s.row.domain !== domain) return false;
+
         const rowKeywords = s.row.keywords.toLowerCase();
         const hasKeywordHit = expandedQueryTokens.some((kw) =>
           rowKeywords.includes(kw)

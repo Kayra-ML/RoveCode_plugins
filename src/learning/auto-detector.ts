@@ -77,7 +77,12 @@ const EXPLICIT_LIKE_PATTERNS: RegExp[] = [
   /\bi\s+like\s+(this|that)\b/i,
   /\bkeep\s+it\s+like\s+this\b/i,
   /\bi\s+prefer\s+(this|that)\b/i,
-  /\b(perfect,\s*keep|perfect!|exactly\s+perfect)\b/i,
+  // "perfect!" ends in a non-word char, so a trailing \b would require a
+  // word char immediately after it — which "Perfect! That's..." never has,
+  // making the alternative unreachable in real sentences. A negative
+  // lookahead correctly asserts "not immediately followed by a word char"
+  // without that false requirement.
+  /\b(perfect,\s*keep|perfect!(?!\w)|exactly\s+perfect\b)/i,
   /\bexactly\s+what\s+i\s+wanted\b/i,
   /\bthis\s+is\s+great[,!.]?\s*keep\s+it\b/i,
   /\balways\s+do\s+it\s+this\s+way\b|\balways\s+do\s+(this|that)\s+way\b/i,
@@ -115,8 +120,12 @@ function isVerifiedSolution(
 ): boolean {
   if (turn.role !== "assistant") return false;
 
-  // Must contain code or solution keywords
-  const hasSolutionKeywords = /```|fixed|resolved|working\s+now|this\s+works|solution/i.test(turn.content);
+  // Must contain code, solution wording, or a test-passing marker. The
+  // pass/passing/✓/✅ markers were previously only checked as part of
+  // isProblemContext below, which this function never reaches unless one of
+  // fixed/resolved/etc. ALSO matched — meaning a plain "tests passing now ✅"
+  // message with no "fixed"/"resolved" wording was silently never recognized.
+  const hasSolutionKeywords = /```|fixed|resolved|working\s+now|this\s+works|solution|\bpass(ing)?\b|✓|✅/i.test(turn.content);
   if (!hasSolutionKeywords) return false;
 
   // Check if preceding user turn described a problem
