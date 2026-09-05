@@ -4,7 +4,7 @@
 
 RoveCode Plugins is a token-efficient, domain-aware skill and memory system for AI coding tools. It routes every request to only the knowledge that matters — no noise, no wasted context — and learns your preferences over time.
 
-Built as an MCP server, it works with OpenCode, VS Code extensions (Kilo Code), Hermes Agent, and any MCP-compatible tool.
+Built as an [MCP](https://modelcontextprotocol.io) (Model Context Protocol) server — a standard way for AI tools to call out to external tools and data sources over stdio. It works with Claude Code, OpenCode, VS Code extensions (Kilo Code), Hermes Agent, and any other MCP-compatible client.
 
 ---
 
@@ -24,7 +24,7 @@ Most AI tools inject everything into context hoping something sticks. RoveCode P
 
 ## Benchmark Results
 
-Tested against 20 real-world scenarios across 9 domains.
+Quick-check suite: 20 real-world scenarios across 9 of the 11 domains (`benchmark/run-benchmark.ts`).
 
 ```
 Overall Score:    98/100  (A+)
@@ -123,14 +123,51 @@ Skills declare relationships. Selecting `creative-direction` auto-suggests `typo
 ## Installation
 
 ### Requirements
-- [Bun](https://bun.sh) v1.0+
+- [Bun](https://bun.sh) v1.0+ — that's it. Bun is its own runtime; you don't need Node.js installed separately. Works on Windows, macOS, and Linux.
 
-Clone the repository:
+### 1. Clone and install
 
 ```bash
 git clone https://github.com/Kayra-ML/RoveCode_plugins
 cd RoveCode_plugins
 bun install
+```
+
+### 2. Verify the install
+
+```bash
+bun test
+```
+
+You should see `149 pass, 0 fail`. This confirms the plugin registry, router, classifier, and personal-skill storage all work correctly on your machine before you wire it into any client.
+
+Optionally, sanity-check the routing logic itself against 20 hand-picked scenarios:
+
+```bash
+bun run benchmark/run-benchmark.ts
+```
+
+Expect an overall grade of A+ (98/100). For a much larger, harder check (445 scenarios, one per plugin skill plus edge cases), see [`benchmark/large/`](benchmark/large/).
+
+### 3. Note your install path
+
+Every client below needs the **absolute path** to `src/mcp/index.ts` in your clone. Forward slashes work fine even on Windows (e.g. `C:/Users/you/RoveCode_plugins/src/mcp/index.ts`), so you don't need to escape backslashes in JSON.
+
+---
+
+### Claude Code
+
+From the project directory you want it available in:
+
+```bash
+claude mcp add rovecode-plugins -- bun run /path/to/RoveCode_plugins/src/mcp/index.ts
+```
+
+Or add it directly to `.mcp.json` in your project root (same format as the VS Code config below). Verify with:
+
+```bash
+claude mcp list
+# rovecode-plugins: bun run /path/to/RoveCode_plugins/src/mcp/index.ts - ✓ Connected
 ```
 
 ---
@@ -219,6 +256,14 @@ Test the server directly:
 ```bash
 echo '{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{}}' | bun run src/mcp/index.ts
 ```
+
+---
+
+### Troubleshooting
+
+- **Client shows "not connected" / can't spawn the server** — run the exact `bun run /path/to/.../src/mcp/index.ts` command from your config directly in a terminal first. A typo'd path or a `bun` not on `PATH` for the client's environment is the most common cause; the direct run will show the real error instead of a generic "disconnected" status.
+- **`bun run src/cli/index.ts route "..." --debug` prints the result but never returns to your shell prompt** — this is expected. The CLI keeps a file watcher open (so plugin edits hot-reload without a restart), which keeps the process alive on purpose. Press `Ctrl+C` once you've seen the output.
+- **A user's learned preferences seem to vanish** — personal-skill data lives under `data/users/` in your clone (git-ignored on purpose, since it's per-machine state, not project source). Deleting or moving the clone deletes that history with it.
 
 ---
 
