@@ -1,0 +1,11 @@
+{
+  "id": "ci-cd",
+  "pluginId": "devops",
+  "name": "CI/CD Pipelines",
+  "description": "GitHub Actions workflow structure, caching, parallel jobs, environment secrets, deploy on merge, branch protection, preview deployments, and rollback.",
+  "activationSignals": ["CI", "CD", "GitHub Actions", "pipeline", "workflow", "automated deploy", "build"],
+  "estimatedTokens": 750,
+  "relatedSkills": ["docker-patterns", "deployment-strategies"],
+  "priority": 85,
+  "bodyPath": "skills/ci-cd.md"
+}

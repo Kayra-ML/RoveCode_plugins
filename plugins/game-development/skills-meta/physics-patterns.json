@@ -1,0 +1,11 @@
+{
+  "id": "physics-patterns",
+  "pluginId": "game-development",
+  "name": "Physics Patterns",
+  "description": "Rigidbodies, collision layers, continuous detection, character controllers vs physics bodies, and determinism.",
+  "activationSignals": ["physics", "collision", "rigidbody", "collider", "raycast", "character controller", "hitbox"],
+  "estimatedTokens": 830,
+  "relatedSkills": ["game-loop", "input-handling"],
+  "priority": 86,
+  "bodyPath": "skills/physics-patterns.md"
+}

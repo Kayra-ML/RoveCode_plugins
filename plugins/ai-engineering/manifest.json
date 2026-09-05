@@ -1,0 +1,9 @@
+{
+  "id": "ai-engineering",
+  "name": "AI Engineering",
+  "description": "LLM application engineering covering prompt design, RAG, embeddings, fine-tuning, agent architecture, and evaluation.",
+  "version": "0.1.0",
+  "domains": ["ai-engineering"],
+  "activationHints": ["ai", "llm", "prompt", "rag", "embedding", "vector", "fine-tune", "agent", "openai", "anthropic", "langchain", "model"],
+  "skills": ["prompt-engineering", "rag-patterns", "fine-tuning", "agent-design", "embedding-strategies", "llm-evaluation"]
+}

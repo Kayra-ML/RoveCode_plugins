@@ -1,0 +1,11 @@
+{
+  "id": "navigation-patterns",
+  "pluginId": "mobile",
+  "name": "Navigation Patterns",
+  "description": "React Navigation v6, TypeScript type-safe navigation, nested navigators, deep linking, auth gate pattern, back button, and state persistence.",
+  "activationSignals": ["navigation", "React Navigation", "stack", "tab", "drawer", "deep link", "route"],
+  "estimatedTokens": 750,
+  "relatedSkills": ["react-native-patterns"],
+  "priority": 80,
+  "bodyPath": "skills/navigation-patterns.md"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "typography",
+  "pluginId": "web-design",
+  "name": "Typography",
+  "description": "Type selection, scale, hierarchy, pairing, optical sizing, and typographic rhythm for web interfaces.",
+  "activationSignals": [
+    "typography", "font", "typeface", "type scale", "heading", "body text",
+    "readability", "legibility", "line height", "letter spacing", "font pairing",
+    "serif", "sans-serif", "monospace", "variable font"
+  ],
+  "estimatedTokens": 600,
+  "relatedSkills": ["creative-direction", "layout-composition"],
+  "priority": 75,
+  "bodyPath": "skills/typography.md",
+  "suggests": ["spacing-rhythm"]
+}

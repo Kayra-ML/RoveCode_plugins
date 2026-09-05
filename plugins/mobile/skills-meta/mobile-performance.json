@@ -1,0 +1,11 @@
+{
+  "id": "mobile-performance",
+  "pluginId": "mobile",
+  "name": "Mobile Performance",
+  "description": "JS/UI/Native thread model, Hermes engine, New Architecture (JSI/Fabric/TurboModules), bridge bottlenecks, Flipper profiling, and re-render prevention.",
+  "activationSignals": ["mobile performance", "jank", "frame drop", "slow render", "FPS", "Hermes", "bridge"],
+  "estimatedTokens": 750,
+  "relatedSkills": ["react-native-patterns"],
+  "priority": 80,
+  "bodyPath": "skills/mobile-performance.md"
+}

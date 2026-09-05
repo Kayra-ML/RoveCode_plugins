@@ -1,0 +1,11 @@
+{
+  "id": "environment-config",
+  "pluginId": "devops",
+  "name": "Environment Configuration",
+  "description": "12-factor app config, .env vs environment variables, .env.example pattern, config validation at startup, environment-specific config, and Zod for env validation.",
+  "activationSignals": ["environment", ".env", "config", "ENV", "secrets", "production config", "12-factor"],
+  "estimatedTokens": 650,
+  "relatedSkills": ["secrets-management", "docker-patterns"],
+  "priority": 75,
+  "bodyPath": "skills/environment-config.md"
+}

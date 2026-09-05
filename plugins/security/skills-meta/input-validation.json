@@ -1,0 +1,11 @@
+{
+  "id": "input-validation",
+  "pluginId": "security",
+  "name": "Input Validation",
+  "description": "Never trust user input, Zod schema validation, allowlist vs denylist, file upload validation, SSRF, ReDoS, HTML sanitization, and path traversal.",
+  "activationSignals": ["input validation", "sanitization", "user input", "zod", "validation schema", "malicious input"],
+  "estimatedTokens": 750,
+  "relatedSkills": ["injection-prevention", "xss-csrf-protection"],
+  "priority": 85,
+  "bodyPath": "skills/input-validation.md"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "cli-engineering",
+  "pluginId": "rust",
+  "name": "CLI Engineering",
+  "description": "Building robust Rust CLIs with clap, argument parsing, subcommands, configuration, terminal output, and UX patterns.",
+  "activationSignals": [
+    "CLI", "command line", "clap", "argument", "subcommand", "flag",
+    "terminal", "stdout", "stderr", "prompt", "interactive", "TUI",
+    "binary", "executable", "tool", "utility"
+  ],
+  "estimatedTokens": 650,
+  "relatedSkills": ["rust-core", "error-handling"],
+  "priority": 70,
+  "bodyPath": "skills/cli-engineering.md"
+}

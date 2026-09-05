@@ -1,0 +1,11 @@
+{
+  "id": "e2e-testing",
+  "pluginId": "testing",
+  "name": "E2E Testing",
+  "description": "Playwright architecture, page object model, stable selectors, auth state reuse, CI sharding, and debugging.",
+  "activationSignals": ["e2e", "end-to-end", "playwright", "cypress", "browser test", "user flow"],
+  "estimatedTokens": 800,
+  "relatedSkills": ["integration-testing", "mocking-patterns"],
+  "priority": 80,
+  "bodyPath": "skills/e2e-testing.md"
+}

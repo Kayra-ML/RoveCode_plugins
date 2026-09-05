@@ -1,0 +1,11 @@
+{
+  "id": "offline-storage",
+  "pluginId": "mobile",
+  "name": "Offline Storage",
+  "description": "AsyncStorage vs MMKV, WatermelonDB, offline-first architecture, optimistic updates, conflict resolution, NetInfo, and secure storage.",
+  "activationSignals": ["offline", "local storage", "AsyncStorage", "SQLite", "MMKV", "sync", "cache"],
+  "estimatedTokens": 700,
+  "relatedSkills": ["react-native-patterns"],
+  "priority": 75,
+  "bodyPath": "skills/offline-storage.md"
+}

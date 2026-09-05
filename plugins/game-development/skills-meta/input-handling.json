@@ -1,0 +1,11 @@
+{
+  "id": "input-handling",
+  "pluginId": "game-development",
+  "name": "Input Handling",
+  "description": "Action maps, buffering, coyote time, input lag, rebinding, and device-agnostic input across keyboard, gamepad, and touch.",
+  "activationSignals": ["input", "gamepad", "keyboard", "touch", "rebinding", "coyote time", "input buffer", "action map"],
+  "estimatedTokens": 740,
+  "relatedSkills": ["game-state", "physics-patterns"],
+  "priority": 82,
+  "bodyPath": "skills/input-handling.md"
+}

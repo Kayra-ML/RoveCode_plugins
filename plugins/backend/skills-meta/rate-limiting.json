@@ -1,0 +1,11 @@
+{
+  "id": "rate-limiting",
+  "pluginId": "backend",
+  "name": "Rate Limiting",
+  "description": "Fixed window vs sliding window vs token bucket algorithms, per-IP vs per-user limits, Redis-backed rate limiting, and rate limit headers.",
+  "activationSignals": ["rate limit", "throttle", "abuse", "DDoS", "quota", "429"],
+  "estimatedTokens": 600,
+  "relatedSkills": ["middleware-design", "error-handling-http"],
+  "priority": 70,
+  "bodyPath": "skills/rate-limiting.md"
+}

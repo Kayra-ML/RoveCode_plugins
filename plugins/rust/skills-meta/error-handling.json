@@ -1,0 +1,15 @@
+{
+  "id": "error-handling",
+  "pluginId": "rust",
+  "name": "Error Handling",
+  "description": "Result/Option patterns, custom error types, thiserror, anyhow, error propagation, and panic vs recoverable error strategy.",
+  "activationSignals": [
+    "error", "Result", "Option", "unwrap", "expect", "?", "propagate",
+    "thiserror", "anyhow", "custom error", "error type", "panic", "recover",
+    "error handling", "failure", "fallible"
+  ],
+  "estimatedTokens": 700,
+  "relatedSkills": ["rust-core"],
+  "priority": 82,
+  "bodyPath": "skills/error-handling.md"
+}

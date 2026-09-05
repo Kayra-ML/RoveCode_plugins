@@ -1,0 +1,16 @@
+{
+  "id": "layout-composition",
+  "pluginId": "web-design",
+  "name": "Layout & Composition",
+  "description": "Grid systems, visual hierarchy, whitespace, asymmetry, density, and compositional principles for web layouts.",
+  "activationSignals": [
+    "layout", "grid", "composition", "hierarchy", "whitespace", "density",
+    "section", "page structure", "sidebar", "dashboard", "panel", "column",
+    "asymmetric", "negative space", "visual weight"
+  ],
+  "estimatedTokens": 700,
+  "relatedSkills": ["responsive-design", "creative-direction"],
+  "priority": 85,
+  "bodyPath": "skills/layout-composition.md",
+  "suggests": ["typography", "responsive-design", "spacing-rhythm"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "fine-tuning",
+  "pluginId": "ai-engineering",
+  "name": "Fine-Tuning",
+  "description": "When to fine-tune vs prompt vs RAG, LoRA/QLoRA, dataset quality, catastrophic forgetting, and evaluation of adapted models.",
+  "activationSignals": ["fine-tune", "finetune", "lora", "qlora", "sft", "dpo", "adapter", "instruction tuning"],
+  "estimatedTokens": 780,
+  "relatedSkills": ["prompt-engineering", "llm-evaluation"],
+  "priority": 76,
+  "bodyPath": "skills/fine-tuning.md"
+}

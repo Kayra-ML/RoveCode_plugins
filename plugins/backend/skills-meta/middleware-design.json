@@ -1,0 +1,11 @@
+{
+  "id": "middleware-design",
+  "pluginId": "backend",
+  "name": "Middleware Design",
+  "description": "Middleware execution order, error middleware, async patterns, request validation, CORS, compression, and middleware vs route handler separation.",
+  "activationSignals": ["middleware", "pipeline", "interceptor", "request", "response", "chain"],
+  "estimatedTokens": 650,
+  "relatedSkills": ["api-design", "error-handling-http"],
+  "priority": 75,
+  "bodyPath": "skills/middleware-design.md"
+}

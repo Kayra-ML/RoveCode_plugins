@@ -1,0 +1,15 @@
+{
+  "id": "data-transformation",
+  "pluginId": "automation",
+  "name": "Data Transformation",
+  "description": "ETL patterns, data mapping, format conversion, validation, and pipeline data flow for automation tasks.",
+  "activationSignals": [
+    "transform", "ETL", "data", "convert", "map", "parse", "format",
+    "JSON", "CSV", "XML", "schema", "validate", "normalize", "clean data",
+    "data pipeline", "extract", "load"
+  ],
+  "estimatedTokens": 600,
+  "relatedSkills": ["workflow-design", "scraping-strategy"],
+  "priority": 72,
+  "bodyPath": "skills/data-transformation.md"
+}

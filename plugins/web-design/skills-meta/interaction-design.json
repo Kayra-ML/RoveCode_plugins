@@ -1,0 +1,15 @@
+{
+  "id": "interaction-design",
+  "pluginId": "web-design",
+  "name": "Interaction Design",
+  "description": "Microinteractions, state transitions, feedback patterns, hover/focus/active states, and interactive component behavior.",
+  "activationSignals": [
+    "interaction", "hover", "focus", "click", "microinteraction", "state",
+    "feedback", "transition", "toggle", "dropdown", "tooltip", "popover",
+    "gesture", "touch", "swipe", "drag", "interactive"
+  ],
+  "estimatedTokens": 700,
+  "relatedSkills": ["motion-engineering", "accessibility"],
+  "priority": 70,
+  "bodyPath": "skills/interaction-design.md"
+}

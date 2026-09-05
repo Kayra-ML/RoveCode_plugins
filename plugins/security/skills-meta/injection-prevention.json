@@ -1,0 +1,11 @@
+{
+  "id": "injection-prevention",
+  "pluginId": "security",
+  "name": "Injection Prevention",
+  "description": "SQL injection mechanics, parameterized queries, ORM injection risks, NoSQL injection, command injection, template injection, and eval() dangers.",
+  "activationSignals": ["SQL injection", "injection", "parameterized query", "prepared statement", "command injection"],
+  "estimatedTokens": 750,
+  "relatedSkills": ["input-validation"],
+  "priority": 85,
+  "bodyPath": "skills/injection-prevention.md"
+}

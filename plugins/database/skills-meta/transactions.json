@@ -1,0 +1,11 @@
+{
+  "id": "transactions",
+  "pluginId": "database",
+  "name": "Transactions & Concurrency",
+  "description": "ACID properties, isolation levels, deadlock detection, optimistic vs pessimistic locking, SELECT FOR UPDATE, and distributed transaction problems.",
+  "activationSignals": ["transaction", "ACID", "rollback", "commit", "concurrent", "deadlock", "isolation"],
+  "estimatedTokens": 700,
+  "relatedSkills": ["schema-design", "migrations"],
+  "priority": 80,
+  "bodyPath": "skills/transactions.md"
+}

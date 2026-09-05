@@ -1,0 +1,11 @@
+{
+  "id": "docker-patterns",
+  "pluginId": "devops",
+  "name": "Docker Patterns",
+  "description": "Multi-stage builds, layer caching, non-root users, .dockerignore, health checks, docker-compose for dev, image optimization, and resource limits.",
+  "activationSignals": ["docker", "container", "Dockerfile", "docker-compose", "image", "layer"],
+  "estimatedTokens": 750,
+  "relatedSkills": ["ci-cd", "environment-config"],
+  "priority": 85,
+  "bodyPath": "skills/docker-patterns.md"
+}

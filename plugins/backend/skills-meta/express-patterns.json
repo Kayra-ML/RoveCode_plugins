@@ -1,0 +1,11 @@
+{
+  "id": "express-patterns",
+  "pluginId": "backend",
+  "name": "Express / Fastify / Hono Patterns",
+  "description": "Route organization, controller/service/repository pattern, async handlers, request validation, graceful shutdown, and framework comparison.",
+  "activationSignals": ["express", "fastify", "hono", "node server", "app.use", "router"],
+  "estimatedTokens": 700,
+  "relatedSkills": ["api-design", "middleware-design"],
+  "priority": 75,
+  "bodyPath": "skills/express-patterns.md"
+}

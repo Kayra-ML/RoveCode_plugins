@@ -1,0 +1,14 @@
+node_modules/
+data/
+*.db
+*.db-shm
+*.db-wal
+benchmark/results.json
+benchmark/isolation-results.json
+benchmark/skill-relevance-results.md
+.env
+.env.local
+*.log
+dist/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,10 @@
+{
+  "id": "spacing-rhythm",
+  "pluginId": "web-design",
+  "name": "Spacing & Rhythm System",
+  "description": "4px/8px grid systems, baseline grid, fluid spacing with clamp(), line-height per typeface, optical spacing",
+  "activationSignals": ["spacing", "padding", "margin", "rhythm", "grid system", "8px", "layout spacing", "whitespace system", "clamp", "fluid spacing"],
+  "estimatedTokens": 700,
+  "priority": 82,
+  "bodyPath": "skills/spacing-rhythm.md"
+}

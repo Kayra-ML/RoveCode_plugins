@@ -1,0 +1,16 @@
+{
+  "id": "creative-direction",
+  "pluginId": "web-design",
+  "name": "Creative Direction",
+  "description": "Defines the visual concept, design DNA, brand identity direction, and aesthetic vocabulary for a project before any code is written.",
+  "activationSignals": [
+    "design direction", "visual concept", "brand", "aesthetic", "design DNA",
+    "style guide", "moodboard", "visual identity", "creative brief", "look and feel",
+    "design language", "visual language", "design system foundation"
+  ],
+  "estimatedTokens": 800,
+  "relatedSkills": ["typography", "layout-composition", "visual-review"],
+  "priority": 90,
+  "bodyPath": "skills/creative-direction.md",
+  "suggests": ["typography", "layout-composition", "color-system", "visual-review"]
+}

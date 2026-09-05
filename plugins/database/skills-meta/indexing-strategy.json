@@ -1,0 +1,11 @@
+{
+  "id": "indexing-strategy",
+  "pluginId": "database",
+  "name": "Indexing Strategy",
+  "description": "B-tree index internals, when not to index, composite index column order, partial indexes, GIN indexes, index bloat, covering indexes, and index monitoring.",
+  "activationSignals": ["index", "B-tree", "slow query", "full scan", "composite index", "partial index"],
+  "estimatedTokens": 750,
+  "relatedSkills": ["query-optimization", "schema-design"],
+  "priority": 85,
+  "bodyPath": "skills/indexing-strategy.md"
+}

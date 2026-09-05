@@ -1,0 +1,15 @@
+{
+  "id": "reliability-retries",
+  "pluginId": "automation",
+  "name": "Reliability & Retries",
+  "description": "Retry strategies, exponential backoff, circuit breakers, idempotency, error recovery, and building resilient automation.",
+  "activationSignals": [
+    "retry", "reliable", "resilient", "backoff", "circuit breaker", "timeout",
+    "idempotent", "failure", "recover", "fault tolerant", "flaky", "intermittent",
+    "error recovery", "dead letter", "compensating action"
+  ],
+  "estimatedTokens": 600,
+  "relatedSkills": ["workflow-design", "scheduling"],
+  "priority": 78,
+  "bodyPath": "skills/reliability-retries.md"
+}

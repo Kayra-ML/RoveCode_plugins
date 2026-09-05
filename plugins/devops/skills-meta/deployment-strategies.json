@@ -1,0 +1,11 @@
+{
+  "id": "deployment-strategies",
+  "pluginId": "devops",
+  "name": "Deployment Strategies",
+  "description": "Blue-green, canary, rolling deployments, zero-downtime checklist, graceful shutdown, database migration order, and rollback procedures.",
+  "activationSignals": ["deploy", "blue-green", "canary", "rolling", "zero downtime", "rollback"],
+  "estimatedTokens": 700,
+  "relatedSkills": ["ci-cd", "logging-monitoring"],
+  "priority": 80,
+  "bodyPath": "skills/deployment-strategies.md"
+}

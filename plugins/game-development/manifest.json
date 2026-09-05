@@ -1,0 +1,15 @@
+﻿{
+  "id": "game-development",
+  "name": "Game Development",
+  "description": "Game engine engineering covering game loops, physics, rendering, input, state machines, and asset pipelines.",
+  "version": "0.1.0",
+  "domains": ["game-development"],
+  "activationHints": [
+    "game", "unity", "unreal", "godot",
+    "game physics", "sprite", "game shader",
+    "collision detection", "game loop", "game engine",
+    "tilemap", "player controller", "2d platformer", "3d game",
+    "game development", "gamedev"
+  ],
+  "skills": ["game-loop", "physics-patterns", "rendering-pipeline", "input-handling", "game-state", "asset-management"]
+}

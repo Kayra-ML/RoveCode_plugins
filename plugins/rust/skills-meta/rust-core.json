@@ -1,0 +1,14 @@
+{
+  "id": "rust-core",
+  "pluginId": "rust",
+  "name": "Rust Core",
+  "description": "Fundamental Rust concepts: types, traits, generics, pattern matching, iterators, and idiomatic Rust style.",
+  "activationSignals": [
+    "rust", "cargo", "trait", "generic", "iterator", "pattern matching",
+    "match", "enum", "struct", "impl", "module", "crate", "rustc", "idiomatic"
+  ],
+  "estimatedTokens": 800,
+  "relatedSkills": ["ownership-borrowing", "error-handling"],
+  "priority": 90,
+  "bodyPath": "skills/rust-core.md"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "web-performance",
+  "pluginId": "web-design",
+  "name": "Web Performance",
+  "description": "Core Web Vitals, image optimization, font loading, CSS performance, bundle strategy, and perceived performance techniques.",
+  "activationSignals": [
+    "performance", "speed", "loading", "LCP", "CLS", "FID", "INP", "Core Web Vitals",
+    "optimize", "bundle size", "lazy load", "preload", "cache", "fast",
+    "lighthouse", "PageSpeed", "font loading", "image optimization"
+  ],
+  "estimatedTokens": 600,
+  "relatedSkills": ["responsive-design", "browser-qa"],
+  "priority": 68,
+  "bodyPath": "skills/web-performance.md"
+}

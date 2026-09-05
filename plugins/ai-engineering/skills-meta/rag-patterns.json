@@ -1,0 +1,11 @@
+{
+  "id": "rag-patterns",
+  "pluginId": "ai-engineering",
+  "name": "RAG Patterns",
+  "description": "Chunking, retrieval, reranking, hybrid search, citation grounding, and failure modes of retrieval-augmented generation.",
+  "activationSignals": ["rag", "retrieval", "chunk", "vector search", "rerank", "knowledge base", "grounding", "citation"],
+  "estimatedTokens": 840,
+  "relatedSkills": ["embedding-strategies", "llm-evaluation"],
+  "priority": 88,
+  "bodyPath": "skills/rag-patterns.md"
+}

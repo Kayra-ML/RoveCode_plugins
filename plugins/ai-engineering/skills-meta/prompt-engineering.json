@@ -1,0 +1,11 @@
+{
+  "id": "prompt-engineering",
+  "pluginId": "ai-engineering",
+  "name": "Prompt Engineering",
+  "description": "System vs user prompts, few-shot design, chain-of-thought, structured output, tool-calling prompts, and failure-mode handling for LLMs.",
+  "activationSignals": ["prompt", "system prompt", "few-shot", "chain of thought", "instruction", "openai", "anthropic", "llm"],
+  "estimatedTokens": 820,
+  "relatedSkills": ["agent-design", "llm-evaluation"],
+  "priority": 90,
+  "bodyPath": "skills/prompt-engineering.md"
+}

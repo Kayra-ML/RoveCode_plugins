@@ -1,0 +1,11 @@
+{
+  "id": "react-native-patterns",
+  "pluginId": "mobile",
+  "name": "React Native Patterns",
+  "description": "Expo vs bare RN, StyleSheet performance, FlatList optimization, platform-specific code, Reanimated 2, Gesture Handler, and image optimization.",
+  "activationSignals": ["react native", "RN", "expo sdk", "expo router", "native component", "StyleSheet", "FlatList", "hooks"],
+  "estimatedTokens": 800,
+  "relatedSkills": ["mobile-performance", "navigation-patterns"],
+  "priority": 85,
+  "bodyPath": "skills/react-native-patterns.md"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "asset-management",
+  "pluginId": "game-development",
+  "name": "Asset Management",
+  "description": "Import pipelines, atlases, addressables, streaming, memory budgets, and hot-reload of art and audio assets.",
+  "activationSignals": ["asset", "atlas", "addressable", "prefab", "import", "streaming", "texture", "audio clip"],
+  "estimatedTokens": 690,
+  "relatedSkills": ["rendering-pipeline", "game-state"],
+  "priority": 74,
+  "bodyPath": "skills/asset-management.md"
+}

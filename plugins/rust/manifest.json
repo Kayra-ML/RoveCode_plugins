@@ -1,0 +1,26 @@
+{
+  "id": "rust",
+  "name": "Rust",
+  "description": "Rust systems programming expertise covering ownership, async, performance, error handling, and CLI engineering.",
+  "version": "0.1.0",
+  "domains": ["rust"],
+  "activationHints": [
+    "rust", "cargo", "ownership", "borrow checker", "lifetime",
+    "tokio", "async rust", "rust async",
+    "trait bound", "rust enum", "rust struct",
+    "unsafe rust", "ffi", "wasm rust", "crate",
+    "rustc", "clippy", "rustfmt",
+    "zero-cost", "rust cli", "rust error",
+    "borrow", "rust code", "rust project"
+  ],
+  "skills": [
+    "rust-core",
+    "ownership-borrowing",
+    "async-concurrency",
+    "performance",
+    "error-handling",
+    "cli-engineering"
+  ],
+  "dependencies": [],
+  "optionalDependencies": []
+}

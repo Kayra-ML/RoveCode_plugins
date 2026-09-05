@@ -1,0 +1,14 @@
+{
+  "id": "scheduling",
+  "pluginId": "automation",
+  "name": "Scheduling",
+  "description": "Cron jobs, task scheduling, time-based triggers, distributed scheduling, and avoiding common scheduling pitfalls.",
+  "activationSignals": [
+    "schedule", "cron", "scheduled", "timer", "interval", "periodic",
+    "daily", "hourly", "trigger", "time-based", "background job", "recurring"
+  ],
+  "estimatedTokens": 550,
+  "relatedSkills": ["workflow-design", "reliability-retries"],
+  "priority": 70,
+  "bodyPath": "skills/scheduling.md"
+}

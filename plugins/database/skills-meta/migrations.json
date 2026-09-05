@@ -1,0 +1,11 @@
+{
+  "id": "migrations",
+  "pluginId": "database",
+  "name": "Database Migrations",
+  "description": "Zero-downtime migration strategies, never rename columns, migration tools, up/down migrations, deployment order, and lock-free migrations in Postgres.",
+  "activationSignals": ["migration", "schema change", "ALTER TABLE", "rollback", "database version"],
+  "estimatedTokens": 700,
+  "relatedSkills": ["schema-design", "transactions"],
+  "priority": 80,
+  "bodyPath": "skills/migrations.md"
+}

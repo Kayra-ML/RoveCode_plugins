@@ -1,0 +1,11 @@
+{
+  "id": "performance-testing",
+  "pluginId": "testing",
+  "name": "Performance Testing",
+  "description": "Load, stress, spike and soak testing, k6 scripts, p50/p95/p99 percentiles, bottleneck analysis, and performance budgets.",
+  "activationSignals": ["performance test", "load test", "benchmark", "k6", "artillery", "throughput", "latency"],
+  "estimatedTokens": 700,
+  "relatedSkills": ["integration-testing"],
+  "priority": 70,
+  "bodyPath": "skills/performance-testing.md"
+}

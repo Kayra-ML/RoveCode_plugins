@@ -1,0 +1,11 @@
+{
+  "id": "game-loop",
+  "pluginId": "game-development",
+  "name": "Game Loop",
+  "description": "Fixed vs variable timestep, interpolation, spiral-of-death, frame pacing, and engine tick architecture in Unity, Unreal, and Godot.",
+  "activationSignals": ["game loop", "timestep", "delta time", "tick", "fixed update", "frame rate", "interpolation"],
+  "estimatedTokens": 800,
+  "relatedSkills": ["physics-patterns", "game-state"],
+  "priority": 90,
+  "bodyPath": "skills/game-loop.md"
+}

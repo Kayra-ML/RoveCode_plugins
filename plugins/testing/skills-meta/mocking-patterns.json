@@ -1,0 +1,11 @@
+{
+  "id": "mocking-patterns",
+  "pluginId": "testing",
+  "name": "Mocking Patterns",
+  "description": "Mock vs stub vs spy vs fake, vi.mock() patterns, MSW for HTTP, mocking time and filesystem, and avoiding over-mocking.",
+  "activationSignals": ["mock", "stub", "spy", "fake", "vi.mock", "jest.mock", "dependency injection"],
+  "estimatedTokens": 700,
+  "relatedSkills": ["unit-testing", "integration-testing"],
+  "priority": 75,
+  "bodyPath": "skills/mocking-patterns.md"
+}

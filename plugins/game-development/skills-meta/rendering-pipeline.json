@@ -1,0 +1,11 @@
+{
+  "id": "rendering-pipeline",
+  "pluginId": "game-development",
+  "name": "Rendering Pipeline",
+  "description": "Draw calls, batching, shaders, cameras, culling, lighting, and 2D vs 3D pipeline choices in Unity URP, Unreal, and Godot.",
+  "activationSignals": ["rendering", "shader", "draw call", "batching", "camera", "culling", "sprite", "material"],
+  "estimatedTokens": 850,
+  "relatedSkills": ["asset-management", "game-loop"],
+  "priority": 84,
+  "bodyPath": "skills/rendering-pipeline.md"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dependency-audit",
+  "pluginId": "security",
+  "name": "Dependency Audit",
+  "description": "npm/bun audit workflow, CVSS scores, Dependabot/Renovate, lockfile importance, supply chain attacks, SBOM, and minimal dependency principle.",
+  "activationSignals": ["dependency", "npm audit", "vulnerability", "supply chain", "CVE", "outdated package"],
+  "estimatedTokens": 700,
+  "relatedSkills": ["secrets-hygiene"],
+  "priority": 75,
+  "bodyPath": "skills/dependency-audit.md"
+}

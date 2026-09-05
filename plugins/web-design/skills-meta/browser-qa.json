@@ -1,0 +1,15 @@
+{
+  "id": "browser-qa",
+  "pluginId": "web-design",
+  "name": "Browser QA",
+  "description": "Cross-browser testing, CSS compatibility, rendering differences, and visual regression strategies.",
+  "activationSignals": [
+    "browser", "cross-browser", "Safari", "Firefox", "Chrome", "Edge",
+    "compatibility", "rendering", "CSS bug", "browser bug", "visual regression",
+    "testing", "QA", "browser support", "polyfill"
+  ],
+  "estimatedTokens": 500,
+  "relatedSkills": ["web-performance", "accessibility"],
+  "priority": 55,
+  "bodyPath": "skills/browser-qa.md"
+}

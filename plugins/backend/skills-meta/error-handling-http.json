@@ -1,0 +1,11 @@
+{
+  "id": "error-handling-http",
+  "pluginId": "backend",
+  "name": "HTTP Error Handling",
+  "description": "Error response structure, global error handler pattern, operational vs programmer errors, async error catching, and HTTP status code selection.",
+  "activationSignals": ["error handling", "error response", "exception", "500", "400", "error middleware"],
+  "estimatedTokens": 650,
+  "relatedSkills": ["api-design", "middleware-design"],
+  "priority": 80,
+  "bodyPath": "skills/error-handling-http.md"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "agent-design",
+  "pluginId": "ai-engineering",
+  "name": "Agent Design",
+  "description": "Tool-using agents, planner-executor loops, memory, multi-agent handoff, termination conditions, and sandboxing.",
+  "activationSignals": ["agent", "tool calling", "function calling", "planner", "multi-agent", "langchain", "langgraph", "autogen"],
+  "estimatedTokens": 850,
+  "relatedSkills": ["prompt-engineering", "llm-evaluation"],
+  "priority": 86,
+  "bodyPath": "skills/agent-design.md"
+}

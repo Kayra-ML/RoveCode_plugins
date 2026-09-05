@@ -1,0 +1,11 @@
+{
+  "id": "authentication",
+  "pluginId": "backend",
+  "name": "Authentication",
+  "description": "JWT structure, signing algorithms, token storage, refresh token rotation, session vs JWT, bcrypt, OAuth2 flows, and common auth vulnerabilities.",
+  "activationSignals": ["auth", "JWT", "session", "login", "token", "OAuth", "refresh token", "password"],
+  "estimatedTokens": 800,
+  "relatedSkills": ["middleware-design", "error-handling-http"],
+  "priority": 90,
+  "bodyPath": "skills/authentication.md"
+}

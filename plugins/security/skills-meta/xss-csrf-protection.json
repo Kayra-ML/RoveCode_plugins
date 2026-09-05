@@ -1,0 +1,11 @@
+{
+  "id": "xss-csrf-protection",
+  "pluginId": "security",
+  "name": "XSS & CSRF Protection",
+  "description": "Reflected/Stored/DOM XSS, CSP configuration, nonce-based CSP, CSRF tokens, SameSite cookies, CORS, clickjacking, and security headers.",
+  "activationSignals": ["XSS", "cross-site scripting", "CSRF", "cross-site request forgery", "Content-Security-Policy", "CSP"],
+  "estimatedTokens": 800,
+  "relatedSkills": ["auth-security", "input-validation"],
+  "priority": 85,
+  "bodyPath": "skills/xss-csrf-protection.md"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "workflow-design",
+  "pluginId": "automation",
+  "name": "Workflow Design",
+  "description": "Designing automation workflows: step sequencing, branching logic, error boundaries, idempotency, and workflow state management.",
+  "activationSignals": [
+    "workflow", "pipeline", "sequence", "step", "process", "orchestrate",
+    "chain", "flow", "automate process", "business logic", "state machine"
+  ],
+  "estimatedTokens": 650,
+  "relatedSkills": ["reliability-retries", "scheduling"],
+  "priority": 85,
+  "bodyPath": "skills/workflow-design.md"
+}

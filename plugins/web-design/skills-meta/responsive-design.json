@@ -1,0 +1,15 @@
+{
+  "id": "responsive-design",
+  "pluginId": "web-design",
+  "name": "Responsive Design",
+  "description": "Mobile-first layouts, breakpoint strategy, fluid typography, container queries, and adaptive component design.",
+  "activationSignals": [
+    "responsive", "mobile", "tablet", "breakpoint", "fluid", "adaptive",
+    "viewport", "container query", "media query", "mobile-first", "screen size",
+    "portrait", "landscape", "flexible layout"
+  ],
+  "estimatedTokens": 650,
+  "relatedSkills": ["layout-composition", "web-performance"],
+  "priority": 80,
+  "bodyPath": "skills/responsive-design.md"
+}

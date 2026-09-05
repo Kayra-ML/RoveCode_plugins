@@ -1,0 +1,11 @@
+{
+  "id": "schema-design",
+  "pluginId": "database",
+  "name": "Schema Design",
+  "description": "Normalization, naming conventions, primary key choices, foreign key constraints, nullable decisions, JSONB, enum vs lookup table, and soft delete patterns.",
+  "activationSignals": ["schema", "table", "column", "relation", "foreign key", "normalization", "data model"],
+  "estimatedTokens": 750,
+  "relatedSkills": ["indexing-strategy", "migrations"],
+  "priority": 85,
+  "bodyPath": "skills/schema-design.md"
+}

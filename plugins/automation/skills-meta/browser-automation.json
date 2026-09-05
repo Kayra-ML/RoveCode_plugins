@@ -1,0 +1,15 @@
+{
+  "id": "browser-automation",
+  "pluginId": "automation",
+  "name": "Browser Automation",
+  "description": "Playwright, Puppeteer, and browser control patterns for scraping, testing, and UI automation.",
+  "activationSignals": [
+    "browser", "Playwright", "Puppeteer", "Selenium", "headless", "navigate",
+    "click", "fill", "screenshot", "page", "selector", "DOM", "browser automation",
+    "web scraping", "UI test", "end-to-end"
+  ],
+  "estimatedTokens": 750,
+  "relatedSkills": ["scraping-strategy", "reliability-retries"],
+  "priority": 80,
+  "bodyPath": "skills/browser-automation.md"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "app-store-deployment",
+  "pluginId": "mobile",
+  "name": "App Store Deployment",
+  "description": "EAS Build, iOS certificates and provisioning profiles, Android keystore, OTA updates, review guidelines, TestFlight, and staged rollouts.",
+  "activationSignals": ["app store", "Play Store", "App Store Connect", "submission", "certificate", "signing", "EAS Build"],
+  "estimatedTokens": 700,
+  "relatedSkills": ["react-native-patterns", "push-notifications"],
+  "priority": 70,
+  "bodyPath": "skills/app-store-deployment.md"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "motion-engineering",
+  "pluginId": "web-design",
+  "name": "Motion Engineering",
+  "description": "CSS animations, transitions, spring physics, scroll-driven animation, and purposeful motion design for web.",
+  "activationSignals": [
+    "animation", "motion", "transition", "animate", "spring", "easing",
+    "scroll animation", "parallax", "entrance", "exit", "keyframe",
+    "framer motion", "GSAP", "CSS animation", "animated", "movement"
+  ],
+  "estimatedTokens": 750,
+  "relatedSkills": ["interaction-design", "web-performance"],
+  "priority": 65,
+  "bodyPath": "skills/motion-engineering.md",
+  "requires": ["interaction-design"]
+}

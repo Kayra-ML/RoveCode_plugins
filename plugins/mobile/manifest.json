@@ -1,0 +1,9 @@
+{
+  "id": "mobile",
+  "name": "Mobile Development",
+  "description": "React Native patterns, mobile performance, navigation, offline storage, and app store deployment.",
+  "version": "0.1.0",
+  "domains": ["mobile"],
+  "activationHints": ["mobile", "react native", "ios", "android", "react-native", "expo sdk", "expo router", "navigation", "offline", "push notification"],
+  "skills": ["react-native-patterns", "mobile-performance", "navigation-patterns", "offline-storage", "push-notifications", "app-store-deployment"]
+}

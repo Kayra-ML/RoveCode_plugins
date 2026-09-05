@@ -1,0 +1,11 @@
+{
+  "id": "orm-patterns",
+  "pluginId": "database",
+  "name": "ORM Patterns",
+  "description": "ORM vs query builder vs raw SQL decision tree, Prisma and Drizzle patterns, N+1 with ORMs, raw queries, transactions, and repository pattern.",
+  "activationSignals": ["ORM", "Prisma", "Drizzle", "TypeORM", "Sequelize", "query builder", "model"],
+  "estimatedTokens": 700,
+  "relatedSkills": ["query-optimization", "schema-design"],
+  "priority": 75,
+  "bodyPath": "skills/orm-patterns.md"
+}

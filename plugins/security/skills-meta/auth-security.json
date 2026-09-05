@@ -1,0 +1,11 @@
+{
+  "id": "auth-security",
+  "pluginId": "security",
+  "name": "Authentication Security",
+  "description": "JWT algorithm confusion attacks, token storage, refresh token rotation, brute force protection, bcrypt vs argon2, MFA, and session fixation.",
+  "activationSignals": ["auth security", "JWT security", "session security", "password", "brute force", "token security"],
+  "estimatedTokens": 800,
+  "relatedSkills": ["xss-csrf-protection", "secrets-hygiene"],
+  "priority": 90,
+  "bodyPath": "skills/auth-security.md"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "unit-testing",
+  "pluginId": "testing",
+  "name": "Unit Testing",
+  "description": "What makes a good unit test, AAA pattern, naming conventions, Vitest vs Jest, coverage strategy, and test doubles.",
+  "activationSignals": ["unit test", "vitest", "jest", "describe", "it(", "expect", "assertion", "test coverage"],
+  "estimatedTokens": 750,
+  "relatedSkills": ["tdd-patterns", "mocking-patterns"],
+  "priority": 85,
+  "bodyPath": "skills/unit-testing.md"
+}

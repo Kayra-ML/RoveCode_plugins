@@ -1,0 +1,15 @@
+{
+  "id": "performance",
+  "pluginId": "rust",
+  "name": "Performance",
+  "description": "Zero-cost abstractions, profiling, allocation patterns, SIMD, compiler hints, and Rust-specific optimization techniques.",
+  "activationSignals": [
+    "performance", "optimize", "profiling", "allocation", "heap", "stack",
+    "zero-cost", "SIMD", "inline", "benchmark", "flamegraph", "perf",
+    "throughput", "latency", "memory usage", "fast"
+  ],
+  "estimatedTokens": 750,
+  "relatedSkills": ["ownership-borrowing", "async-concurrency"],
+  "priority": 75,
+  "bodyPath": "skills/performance.md"
+}

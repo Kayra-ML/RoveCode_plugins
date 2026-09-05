@@ -1,0 +1,15 @@
+{
+  "id": "visual-review",
+  "pluginId": "web-design",
+  "name": "Visual Review",
+  "description": "Design critique methodology, visual quality assessment, identifying generic vs distinctive design, and design iteration feedback.",
+  "activationSignals": [
+    "review", "critique", "feedback", "improve", "evaluate", "assess",
+    "looks generic", "looks bad", "improve design", "design feedback",
+    "visual quality", "design critique", "what's wrong", "make it better"
+  ],
+  "estimatedTokens": 600,
+  "relatedSkills": ["creative-direction", "layout-composition"],
+  "priority": 75,
+  "bodyPath": "skills/visual-review.md"
+}

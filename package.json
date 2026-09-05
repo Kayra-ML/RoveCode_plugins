@@ -1,0 +1,21 @@
+{
+  "name": "skill-system",
+  "version": "0.1.0",
+  "description": "Adaptive personal skills + domain plugin system",
+  "type": "module",
+  "bin": {
+    "skill": "./src/cli/index.ts"
+  },
+  "scripts": {
+    "dev": "bun run src/cli/index.ts",
+    "test": "bun test",
+    "build": "bun build src/cli/index.ts --outdir dist --target bun",
+    "mcp": "bun run src/mcp/index.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "query-optimization",
+  "pluginId": "database",
+  "name": "Query Optimization",
+  "description": "EXPLAIN ANALYZE output, N+1 problem, index usage, covering indexes, LIMIT/OFFSET vs cursor pagination performance, and connection pooling.",
+  "activationSignals": ["slow query", "query optimization", "EXPLAIN", "N+1", "performance", "query plan"],
+  "estimatedTokens": 800,
+  "relatedSkills": ["indexing-strategy", "schema-design"],
+  "priority": 85,
+  "bodyPath": "skills/query-optimization.md"
+}

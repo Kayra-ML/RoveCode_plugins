@@ -1,0 +1,11 @@
+{
+  "id": "embedding-strategies",
+  "pluginId": "ai-engineering",
+  "name": "Embedding Strategies",
+  "description": "Embedding model selection, dimensionality, similarity metrics, indexing (HNSW/IVF), and embedding hygiene for RAG.",
+  "activationSignals": ["embedding", "vector", "cosine", "hnsw", "faiss", "pinecone", "chroma", "similarity"],
+  "estimatedTokens": 760,
+  "relatedSkills": ["rag-patterns", "llm-evaluation"],
+  "priority": 82,
+  "bodyPath": "skills/embedding-strategies.md"
+}

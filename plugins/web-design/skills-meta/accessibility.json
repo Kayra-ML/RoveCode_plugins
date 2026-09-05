@@ -1,0 +1,15 @@
+{
+  "id": "accessibility",
+  "pluginId": "web-design",
+  "name": "Accessibility",
+  "description": "WCAG compliance, ARIA patterns, keyboard navigation, screen reader support, color contrast, and inclusive design.",
+  "activationSignals": [
+    "accessibility", "a11y", "WCAG", "ARIA", "screen reader", "keyboard",
+    "focus management", "color contrast", "alt text", "semantic HTML",
+    "inclusive design", "disability", "assistive technology"
+  ],
+  "estimatedTokens": 650,
+  "relatedSkills": ["interaction-design", "browser-qa"],
+  "priority": 72,
+  "bodyPath": "skills/accessibility.md"
+}

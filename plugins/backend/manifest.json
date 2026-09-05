@@ -1,0 +1,9 @@
+{
+  "id": "backend",
+  "name": "Backend Engineering",
+  "description": "Backend API design, server patterns, authentication, middleware, and HTTP engineering.",
+  "version": "0.1.0",
+  "domains": ["backend"],
+  "activationHints": ["api", "server", "express", "fastify", "hono", "endpoint", "route", "middleware", "rest", "graphql", "http", "backend", "node"],
+  "skills": ["api-design", "authentication", "middleware-design", "error-handling-http", "rate-limiting", "express-patterns"]
+}

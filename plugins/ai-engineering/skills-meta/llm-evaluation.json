@@ -1,0 +1,11 @@
+{
+  "id": "llm-evaluation",
+  "pluginId": "ai-engineering",
+  "name": "LLM Evaluation",
+  "description": "Offline eval sets, LLM-as-judge pitfalls, hallucination metrics, latency/cost tradeoffs, and regression gates for model changes.",
+  "activationSignals": ["eval", "evaluation", "hallucination", "llm-as-judge", "golden set", "benchmark", "regression"],
+  "estimatedTokens": 720,
+  "relatedSkills": ["prompt-engineering", "rag-patterns"],
+  "priority": 80,
+  "bodyPath": "skills/llm-evaluation.md"
+}

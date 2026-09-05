@@ -1,0 +1,11 @@
+{
+  "id": "api-design",
+  "pluginId": "backend",
+  "name": "API Design",
+  "description": "REST principles, HTTP method semantics, status code selection, URL patterns, versioning, and pagination strategies.",
+  "activationSignals": ["api design", "REST", "endpoint", "routes", "HTTP methods", "status codes", "versioning", "pagination"],
+  "estimatedTokens": 750,
+  "relatedSkills": ["error-handling-http", "middleware-design"],
+  "priority": 85,
+  "bodyPath": "skills/api-design.md"
+}

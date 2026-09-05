@@ -1,0 +1,11 @@
+{
+  "id": "tdd-patterns",
+  "pluginId": "testing",
+  "name": "TDD Patterns",
+  "description": "Red-Green-Refactor cycle, outside-in vs inside-out TDD, triangulation, TDD for bug fixes, and practical REST endpoint workflow.",
+  "activationSignals": ["TDD", "test driven", "red green refactor", "write test first", "failing test"],
+  "estimatedTokens": 700,
+  "relatedSkills": ["unit-testing", "mocking-patterns"],
+  "priority": 75,
+  "bodyPath": "skills/tdd-patterns.md"
+}

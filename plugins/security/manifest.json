@@ -1,0 +1,9 @@
+{
+  "id": "security",
+  "name": "Web Security",
+  "description": "Authentication security, input validation, OWASP top 10, dependency auditing, and secrets management.",
+  "version": "0.1.0",
+  "domains": ["security"],
+  "activationHints": ["security", "xss", "csrf", "injection", "sql injection", "vulnerability", "owasp", "jwt security", "sanitize", "auth vulnerability", "pentest"],
+  "skills": ["auth-security", "input-validation", "dependency-audit", "xss-csrf-protection", "injection-prevention", "secrets-hygiene"]
+}

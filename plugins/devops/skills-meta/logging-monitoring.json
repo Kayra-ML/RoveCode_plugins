@@ -1,0 +1,11 @@
+{
+  "id": "logging-monitoring",
+  "pluginId": "devops",
+  "name": "Logging & Monitoring",
+  "description": "Structured logging, log levels, correlation IDs, what not to log, log aggregation, error tracking with Sentry, health checks, and OpenTelemetry basics.",
+  "activationSignals": ["logging", "monitoring", "observability", "metrics", "traces", "alerts", "error tracking"],
+  "estimatedTokens": 700,
+  "relatedSkills": ["deployment-strategies", "environment-config"],
+  "priority": 75,
+  "bodyPath": "skills/logging-monitoring.md"
+}

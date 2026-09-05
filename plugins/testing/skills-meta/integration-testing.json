@@ -1,0 +1,11 @@
+{
+  "id": "integration-testing",
+  "pluginId": "testing",
+  "name": "Integration Testing",
+  "description": "Real DB and HTTP integration tests, test database setup, Supertest, transaction rollback isolation, and contract testing.",
+  "activationSignals": ["integration test", "API test", "database test", "supertest", "test database"],
+  "estimatedTokens": 750,
+  "relatedSkills": ["unit-testing", "mocking-patterns"],
+  "priority": 80,
+  "bodyPath": "skills/integration-testing.md"
+}

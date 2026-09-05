@@ -1,0 +1,15 @@
+{
+  "id": "async-concurrency",
+  "pluginId": "rust",
+  "name": "Async & Concurrency",
+  "description": "Async/await, Tokio runtime, concurrent patterns, channels, task spawning, and avoiding common async pitfalls.",
+  "activationSignals": [
+    "async", "await", "tokio", "future", "concurrent", "concurrency",
+    "spawn", "channel", "mpsc", "Mutex", "RwLock", "async runtime",
+    "blocking", "non-blocking", "parallelism", "thread"
+  ],
+  "estimatedTokens": 900,
+  "relatedSkills": ["rust-core", "performance"],
+  "priority": 80,
+  "bodyPath": "skills/async-concurrency.md"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "ownership-borrowing",
+  "pluginId": "rust",
+  "name": "Ownership & Borrowing",
+  "description": "Rust ownership model, borrow checker, lifetimes, interior mutability, and common ownership patterns.",
+  "activationSignals": [
+    "ownership", "borrow", "lifetime", "borrow checker", "move", "clone",
+    "reference", "mutable reference", "interior mutability", "RefCell", "Rc", "Arc",
+    "cannot borrow", "does not live long enough", "ownership error"
+  ],
+  "estimatedTokens": 850,
+  "relatedSkills": ["rust-core", "performance"],
+  "priority": 88,
+  "bodyPath": "skills/ownership-borrowing.md"
+}

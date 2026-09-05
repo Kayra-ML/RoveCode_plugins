@@ -1,0 +1,10 @@
+{
+  "id": "color-system",
+  "pluginId": "web-design",
+  "name": "Color System Engineering",
+  "description": "HSL color systems, semantic tokens, dark mode math, WCAG contrast, palette generation",
+  "activationSignals": ["color system", "color palette", "dark mode", "light mode", "hsl", "semantic color", "contrast ratio", "color token", "wcag color", "palette"],
+  "estimatedTokens": 750,
+  "priority": 83,
+  "bodyPath": "skills/color-system.md"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "game-state",
+  "pluginId": "game-development",
+  "name": "Game State",
+  "description": "Finite state machines, hierarchical states, save/load, pause, scene flow, and avoiding god-objects for game state.",
+  "activationSignals": ["game state", "fsm", "state machine", "save load", "pause", "scene", "checkpoint"],
+  "estimatedTokens": 710,
+  "relatedSkills": ["game-loop", "input-handling"],
+  "priority": 80,
+  "bodyPath": "skills/game-state.md"
+}

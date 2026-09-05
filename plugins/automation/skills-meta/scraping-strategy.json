@@ -1,0 +1,15 @@
+{
+  "id": "scraping-strategy",
+  "pluginId": "automation",
+  "name": "Scraping Strategy",
+  "description": "Web scraping architecture, selector strategy, rate limiting, anti-bot handling, and ethical scraping practices.",
+  "activationSignals": [
+    "scrape", "scraping", "crawl", "spider", "extract data", "website data",
+    "rate limit", "anti-bot", "CAPTCHA", "robots.txt", "sitemap", "cheerio",
+    "selector", "XPath", "CSS selector"
+  ],
+  "estimatedTokens": 700,
+  "relatedSkills": ["browser-automation", "reliability-retries"],
+  "priority": 75,
+  "bodyPath": "skills/scraping-strategy.md"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "push-notifications",
+  "pluginId": "mobile",
+  "name": "Push Notifications",
+  "description": "FCM vs APNs architecture, Expo Notifications, permission timing, notification categories, background vs foreground, deep links, and token refresh.",
+  "activationSignals": ["push notification", "FCM", "APNs", "expo notifications", "background notification", "notification permission"],
+  "estimatedTokens": 700,
+  "relatedSkills": ["react-native-patterns", "app-store-deployment"],
+  "priority": 70,
+  "bodyPath": "skills/push-notifications.md"
+}
