@@ -10,7 +10,8 @@
     "dev": "bun run src/cli/index.ts",
     "test": "bun test",
     "build": "bun build src/cli/index.ts --outdir dist --target bun",
-    "mcp": "bun run src/mcp/index.ts"
+    "mcp": "bun run src/mcp/index.ts",
+    "benchmark:large": "bun run benchmark/large/run-large-benchmark.ts"
   },
   "devDependencies": {
     "bun-types": "latest"

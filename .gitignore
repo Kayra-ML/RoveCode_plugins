@@ -6,6 +6,8 @@ data/
 benchmark/results.json
 benchmark/isolation-results.json
 benchmark/skill-relevance-results.md
+benchmark/large/results.json
+benchmark/large/REPORT.md
 .env
 .env.local
 *.log
